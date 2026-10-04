@@ -125,18 +125,6 @@
   animation: drift 14s ease-in-out infinite;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: 8%;
-  left: -60px;
-  width: 180px;
-  height: 180px;
-  border: 2px dashed color-mix(in srgb, var(--accent) 35%, transparent);
-  border-radius: 50%;
-  animation: float 7s ease-in-out infinite;
-}
-
 .hero__content > * {
   animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -190,7 +178,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero::before,
-  .hero::after,
   .hero__content > *,
   .hero__media,
   .hero__media img,
