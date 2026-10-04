@@ -1,0 +1,70 @@
+.stats__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 1rem;
+  margin-block: 0;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column-reverse; /* value above label, label first in the DOM for screen readers */
+  text-align: center;
+}
+
+.stats__value {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--primary);
+}
+
+.stats__label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Floating card variant (home page, overlaps the hero) */
+.stats--card {
+  position: relative;
+  z-index: 2;
+  margin-top: -2rem;
+  padding-inline: var(--gutter);
+}
+.stats--card .stats__list {
+  padding: 1.75rem 1.25rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+/* Plain variant (inside .section--dark) */
+.stats--plain .stats__value {
+  color: #fff;
+}
+.stats--plain .stats__label {
+  color: rgb(255 255 255 / 75%);
+}
+
+@media (min-width: 768px) {
+  .stats__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .stats--card .stats__list {
+    padding: 2.25rem 2rem;
+  }
+  .stats--card .stats__item + .stats__item {
+    border-left: 1px solid var(--border);
+  }
+  .stats--plain .stats__item + .stats__item {
+    border-left: 1px solid rgb(255 255 255 / 18%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats--card {
+    margin-top: -3.5rem;
+  }
+}

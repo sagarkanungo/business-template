@@ -1,0 +1,18 @@
+.home-contact {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.home-contact__text {
+  max-width: 46ch;
+  margin-bottom: 1.75rem;
+  color: var(--muted);
+}
+
+@media (min-width: 1024px) {
+  .home-contact {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4rem;
+  }
+}

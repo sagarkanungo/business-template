@@ -1,0 +1,45 @@
+/*
+  THEME VARIABLES
+  Brand colours (--primary, --secondary, --accent) are overridden at start-up from
+  src/config/siteConfig.js -> colors, so edit them there. The values below are fallbacks.
+  Neutral colours, fonts, radius and spacing can be changed here.
+*/
+:root {
+  /* Brand (overridden by siteConfig.colors) */
+  --primary: #1e3a34;
+  --secondary: #3f6b5e;
+  --accent: #a9562a;
+
+  /* Neutrals */
+  --text: #17221f;
+  --muted: #5b6761;
+  --light: #f6f2ec;
+  --border: #e5ded3;
+  --surface: #ffffff;
+
+  /* Derived shades (auto-generated from brand colours) */
+  --primary-dark: color-mix(in srgb, var(--primary) 78%, #000);
+  --accent-dark: color-mix(in srgb, var(--accent) 82%, #000);
+  --primary-soft: color-mix(in srgb, var(--primary) 8%, #fff);
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, #fff);
+  --on-primary: #ffffff;
+
+  /* Typography — swap for a Google Font by editing index.html + these two lines */
+  --font-body: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+
+  /* Shape and depth */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --shadow-sm: 0 1px 3px rgb(23 34 31 / 8%);
+  --shadow: 0 10px 30px rgb(23 34 31 / 8%);
+  --shadow-lg: 0 24px 60px rgb(23 34 31 / 14%);
+
+  /* Layout */
+  --container: 1180px;
+  --gutter: 1.25rem;
+  --header-height: 70px;
+  --section-space: clamp(3.5rem, 8vw, 6.5rem);
+  --transition: 0.25s ease;
+}

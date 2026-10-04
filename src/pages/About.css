@@ -1,0 +1,46 @@
+.about-story {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-story__text p {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+.about-story__text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-card {
+  padding: 2rem;
+  background: var(--primary-soft);
+  border-radius: var(--radius-lg);
+}
+
+.about-card__icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background: var(--primary);
+  border-radius: 16px;
+}
+
+.about-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.about-stats {
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+}
+
+@media (min-width: 1024px) {
+  .about-story {
+    grid-template-columns: 1fr 1.3fr;
+    gap: 5rem;
+  }
+}

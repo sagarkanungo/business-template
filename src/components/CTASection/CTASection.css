@@ -1,0 +1,48 @@
+.cta {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(3.5rem, 8vw, 5.5rem);
+  text-align: center;
+  color: rgb(255 255 255 / 85%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -90px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 6%);
+}
+
+.cta__inner {
+  position: relative;
+  max-width: 760px;
+}
+
+.cta h2 {
+  color: #fff;
+}
+
+.cta p {
+  max-width: 52ch;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+}
+
+.cta__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: stretch;
+}
+
+@media (min-width: 640px) {
+  .cta__actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

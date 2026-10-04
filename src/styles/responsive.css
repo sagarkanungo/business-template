@@ -1,0 +1,50 @@
+/*
+  SHARED RESPONSIVE RULES (mobile-first)
+  Breakpoints: 640px (large phone) · 768px (tablet) · 1024px (laptop) · 1280px (desktop)
+  Component-specific responsive rules live inside each component's own CSS file.
+*/
+
+/* Grid helpers: single column on mobile, expand upward */
+.grid--2,
+.grid--3,
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --gutter: 1.75rem;
+  }
+  .grid--2,
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --gutter: 2rem;
+    --header-height: 80px;
+  }
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --gutter: 2.5rem;
+  }
+}

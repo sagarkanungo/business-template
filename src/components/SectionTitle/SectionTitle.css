@@ -1,0 +1,23 @@
+.section-title {
+  max-width: 640px;
+  margin-bottom: clamp(2rem, 5vw, 3.25rem);
+}
+
+.section-title--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-title h2 {
+  margin-bottom: 0.7rem;
+}
+
+.section-title p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.section--dark .section-title p {
+  color: rgb(255 255 255 / 75%);
+}

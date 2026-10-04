@@ -1,0 +1,71 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.service-card__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card__media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.service-card:hover .service-card__media img {
+  transform: scale(1.05);
+}
+
+.service-card__icon {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 0.9rem;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.service-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.service-card__body p {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.service-card__link {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+.service-card__link .svg-inline--fa {
+  font-size: 0.85em;
+  transition: transform var(--transition);
+}
+.service-card__link:hover .svg-inline--fa {
+  transform: translateX(4px);
+}

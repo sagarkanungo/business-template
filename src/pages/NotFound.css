@@ -1,0 +1,36 @@
+.not-found {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  padding-block: 4rem;
+  text-align: center;
+  background: var(--light);
+}
+
+.not-found__code {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(5rem, 22vw, 10rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.not-found h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.not-found__inner > p:not(.not-found__code) {
+  max-width: 42ch;
+  margin-inline: auto;
+  color: var(--muted);
+}
+
+.not-found__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.75rem;
+}
