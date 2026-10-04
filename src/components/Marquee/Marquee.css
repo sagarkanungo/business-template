@@ -4,7 +4,6 @@
   margin-top: clamp(3rem, 7vw, 5rem);
   color: #fff;
   background: var(--primary);
-  transform: rotate(-1deg) scale(1.02);
 }
 
 .marquee__track {

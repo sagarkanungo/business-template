@@ -16,7 +16,7 @@ const siteConfig = {
   phone: "+91 98765 43210",
   whatsapp: "919876543210", // digits only, with country code, no "+"
   whatsappMessage: "Hello Atelier Studio, I would like to know more about your services.",
-  email: "hello@ateliersudio.example",
+  email: "hello@atelierstudio.example",
   address: "24 Design District, Vijay Nagar, Indore, Madhya Pradesh 452010, India",
 
   hours: [

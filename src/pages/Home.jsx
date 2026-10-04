@@ -117,7 +117,7 @@ function Home() {
               {contactPreview.cta.label}
             </Button>
           </div>
-          <ContactInfo columns={2} />
+          <ContactInfo />
         </div>
       </section>
     </>
