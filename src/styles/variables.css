@@ -24,9 +24,9 @@
   --accent-soft: color-mix(in srgb, var(--accent) 12%, #fff);
   --on-primary: #ffffff;
 
-  /* Typography — swap for a Google Font by editing index.html + these two lines */
-  --font-body: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
-  --font-heading: Georgia, "Times New Roman", serif;
+  /* Typography — fonts are loaded in index.html (Google Fonts); change both places to swap them */
+  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
 
   /* Shape and depth */
   --radius-sm: 8px;

@@ -13,9 +13,10 @@
 
 .stats__value {
   margin: 0;
-  font-family: var(--font-heading);
+  font-family: var(--font-body); /* Playfair numerals are old-style (uneven) — Inter keeps figures clean */
   font-size: clamp(2rem, 5vw, 2.8rem);
   font-weight: 700;
+  letter-spacing: -0.02em;
   line-height: 1.1;
   color: var(--primary);
 }

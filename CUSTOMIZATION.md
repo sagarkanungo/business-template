@@ -105,7 +105,7 @@ Icons are referenced by name from config files. To add one, open `src/utils/icon
 There is no backend. "Send via WhatsApp" opens WhatsApp with the enquiry pre-written; "Send via Email" opens the visitor's mail app (`mailto:`). Both read the contact details from `siteConfig.js`.
 
 ## Changing fonts
-Add a Google Fonts `<link>` in `index.html`, then change `--font-body` / `--font-heading` in `src/styles/variables.css`.
+The template uses Playfair Display (headings) + Inter (body) from Google Fonts. To change: pick fonts on fonts.google.com, replace the `<link>` in `index.html`, then update `--font-body` / `--font-heading` in `src/styles/variables.css`. Suggestions: gym → Oswald + Inter; salon → Cormorant Garamond + Jost; consultant → DM Serif Display + DM Sans.
 
 ## Deploying under a sub-folder
 If the site is hosted at `https://example.com/site/`, build with `npx vite build --base=/site/`. Images and routes handle the base path automatically.
