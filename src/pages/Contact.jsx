@@ -64,7 +64,7 @@ function Contact() {
             <p>{info.text}</p>
             <ContactInfo />
 
-            <div className="contact__hours">
+            <div className="contact__hours reveal">
               <h3>
                 <Icon name="clock" /> {hoursTitle}
               </h3>
@@ -79,7 +79,7 @@ function Contact() {
             </div>
           </div>
 
-          <form className="contact__form" ref={formRef} onSubmit={handleWhatsApp}>
+          <form className="contact__form reveal reveal--right" ref={formRef} onSubmit={handleWhatsApp}>
             <h2>{text.title}</h2>
             <p>{text.text}</p>
 
@@ -139,7 +139,7 @@ function Contact() {
       <section className="section section--alt contact-map">
         <div className="container">
           <h2 className="contact-map__title">{mapTitle}</h2>
-          <div className="contact-map__frame">
+          <div className="contact-map__frame reveal reveal--zoom">
             {siteConfig.mapEmbedUrl ? (
               <iframe
                 src={siteConfig.mapEmbedUrl}

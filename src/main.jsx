@@ -8,6 +8,7 @@ import { applyTheme } from "./utils/helpers.js";
 import "./styles/variables.css";
 import "./styles/global.css";
 import "./styles/responsive.css";
+import "./styles/animations.css";
 
 applyTheme(siteConfig.colors);
 

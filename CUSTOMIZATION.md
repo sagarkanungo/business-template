@@ -116,3 +116,9 @@ If the site is hosted at `https://example.com/site/`, build with `npx vite build
 - *Change colour* → `siteConfig.js` → `colors`
 - *Add a service* → add an object in `servicesConfig.js`
 - *Change heading or paragraph* → the page's config file (`homeConfig.js`, `aboutConfig.js`, …)
+
+## Animations
+- **Scroll reveal:** add `className="reveal"` (optionally `reveal--left`, `reveal--right`, `reveal--zoom`) to any element. Children of a `.grid` stagger automatically. Code: `src/styles/animations.css`, `src/hooks/useScrollReveal.js`.
+- **Scrolling text band:** `src/config/homeConfig.js` → `marquee` (remove the `<Marquee>` line in `src/pages/Home.jsx` to hide it).
+- **Count-up numbers:** automatic for stats such as `"450+"` or `"98%"`.
+- **Turn everything down:** all motion is disabled for visitors with "reduce motion" enabled in their OS. To remove animations for a client, delete the `/* Motion */` blocks in the component CSS files and the `animations.css` import in `main.jsx`.

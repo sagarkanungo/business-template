@@ -21,3 +21,27 @@
 .section--dark .section-title p {
   color: rgb(255 255 255 / 75%);
 }
+
+/* Accent bar that grows when the title scrolls into view */
+.section-title h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: 0.8rem;
+  background: var(--accent);
+  border-radius: 99px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease 0.3s;
+}
+.section-title--center h2::after {
+  margin-inline: auto;
+  transform-origin: center;
+}
+.section-title.is-visible h2::after {
+  transform: scaleX(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .section-title h2::after { transform: none; transition: none; }
+}

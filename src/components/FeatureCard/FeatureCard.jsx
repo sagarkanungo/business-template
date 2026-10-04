@@ -4,7 +4,7 @@ import "./FeatureCard.css";
 /** Icon + title + text card. variant: light | dark (for dark sections) */
 function FeatureCard({ icon, title, text, variant = "light" }) {
   return (
-    <article className={`feature-card feature-card--${variant}`}>
+    <article className={`feature-card feature-card--${variant} reveal`}>
       <span className="feature-card__icon">
         <Icon name={icon} />
       </span>

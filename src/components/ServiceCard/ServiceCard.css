@@ -69,3 +69,6 @@
 .service-card__link:hover .svg-inline--fa {
   transform: translateX(4px);
 }
+
+.service-card__icon { transition: transform 0.4s cubic-bezier(0.3, 1.6, 0.5, 1); }
+.service-card:hover .service-card__icon { transform: translateY(-4px) rotate(-8deg) scale(1.1); }

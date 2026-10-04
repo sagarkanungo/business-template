@@ -5,10 +5,10 @@ import "./SplitSection.css";
 function SplitSection({ image, imageAlt, reverse = false, children }) {
   return (
     <div className={`split ${reverse ? "split--reverse" : ""}`}>
-      <div className="split__media">
+      <div className={`split__media reveal ${reverse ? "reveal--right" : "reveal--left"}`}>
         <img src={assetUrl(image)} alt={imageAlt} width="1000" height="800" loading="lazy" decoding="async" />
       </div>
-      <div className="split__content">{children}</div>
+      <div className={`split__content reveal ${reverse ? "reveal--left" : "reveal--right"}`}>{children}</div>
     </div>
   );
 }

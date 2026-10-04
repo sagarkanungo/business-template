@@ -1,6 +1,7 @@
 import Seo from "../components/Seo/Seo.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import StatsBar from "../components/StatsBar/StatsBar.jsx";
+import Marquee from "../components/Marquee/Marquee.jsx";
 import SplitSection from "../components/SplitSection/SplitSection.jsx";
 import SectionTitle from "../components/SectionTitle/SectionTitle.jsx";
 import ServiceCard from "../components/ServiceCard/ServiceCard.jsx";
@@ -25,6 +26,7 @@ function Home() {
       <Seo page="home" />
       <Hero data={hero} />
       <StatsBar stats={stats} />
+      <Marquee items={homeConfig.marquee} />
 
       <section className="section">
         <div className="container">

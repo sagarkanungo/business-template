@@ -6,7 +6,7 @@ function TestimonialCard({ testimonial }) {
   const { name, role, quote, rating = 5, image } = testimonial;
 
   return (
-    <figure className="testimonial">
+    <figure className="testimonial reveal">
       <Icon name="quote" className="testimonial__quote" />
       <div className="testimonial__stars" role="img" aria-label={`${rating} out of 5 stars`}>
         {Array.from({ length: rating }, (_, i) => (

@@ -1,0 +1,49 @@
+.marquee {
+  overflow: hidden;
+  padding-block: 1.1rem;
+  margin-top: clamp(3rem, 7vw, 5rem);
+  color: #fff;
+  background: var(--primary);
+  transform: rotate(-1deg) scale(1.02);
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+.marquee__row {
+  display: flex;
+  flex: none;
+}
+
+.marquee__row li {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding-right: 1.75rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.marquee__row i {
+  font-style: normal;
+  font-size: 0.8em;
+  color: color-mix(in srgb, var(--accent) 60%, #fff);
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}

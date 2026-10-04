@@ -28,3 +28,21 @@
     height: 62px;
   }
 }
+
+/* Pulsing ring */
+.whatsapp-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #1fa855;
+  animation: wa-pulse 2.4s ease-out infinite;
+  z-index: -1;
+}
+@keyframes wa-pulse {
+  from { opacity: 0.55; transform: scale(1); }
+  to { opacity: 0; transform: scale(1.7); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-btn::before { animation: none; }
+}

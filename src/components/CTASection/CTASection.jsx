@@ -5,7 +5,7 @@ import "./CTASection.css";
 function CTASection({ data }) {
   return (
     <section className="cta">
-      <div className="container cta__inner">
+      <div className="container cta__inner reveal reveal--zoom">
         <h2>{data.title}</h2>
         {data.text && <p>{data.text}</p>}
         <div className="cta__actions">

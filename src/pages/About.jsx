@@ -35,7 +35,7 @@ function About() {
             <span className="eyebrow">{story.eyebrow}</span>
             <h2>{story.title}</h2>
           </div>
-          <div className="about-story__text">
+          <div className="about-story__text reveal">
             {story.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
@@ -46,7 +46,7 @@ function About() {
       <section className="section">
         <div className="container grid grid--2">
           {[mission, vision].map((item) => (
-            <article className="about-card" key={item.title}>
+            <article className="about-card reveal" key={item.title}>
               <span className="about-card__icon">
                 <Icon name={item.icon} />
               </span>

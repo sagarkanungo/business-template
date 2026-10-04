@@ -16,6 +16,9 @@ const homeConfig = {
     trust: { value: "4.9/5", label: "Rated by 300+ happy clients" },
   },
 
+  // Scrolling text band under the hero (short words / service names)
+  marquee: ["Residential", "Commercial", "Space Planning", "Custom Furniture", "Lighting", "Renovation"],
+
   stats: [
     { value: "12+", label: "Years of experience" },
     { value: "450+", label: "Projects completed" },

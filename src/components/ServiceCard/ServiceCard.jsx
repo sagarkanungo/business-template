@@ -6,7 +6,7 @@ import "./ServiceCard.css";
 /** One service. Links to the contact form with the service pre-selected. */
 function ServiceCard({ service, ctaLabel = "Enquire now" }) {
   return (
-    <article className="service-card">
+    <article className="service-card reveal">
       <div className="service-card__media">
         <img src={assetUrl(service.image)} alt={service.title} width="800" height="600" loading="lazy" decoding="async" />
         <span className="service-card__icon">

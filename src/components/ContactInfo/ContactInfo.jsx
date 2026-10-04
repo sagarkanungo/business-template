@@ -21,7 +21,7 @@ function ContactInfo({ columns = 1 }) {
   return (
     <ul className={`contact-info contact-info--${columns}`}>
       {items.map((item) => (
-        <li key={item.label} className="contact-info__item">
+        <li key={item.label} className="contact-info__item reveal">
           <span className="contact-info__icon">
             <Icon name={item.icon} />
           </span>

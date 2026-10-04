@@ -188,3 +188,9 @@ button {
     transform: none;
   }
 }
+
+/* Prevents tiny horizontal scroll from decorative rotated/scaled elements ("clip" keeps sticky header working) */
+html,
+body {
+  overflow-x: clip;
+}

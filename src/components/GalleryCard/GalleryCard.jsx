@@ -22,13 +22,13 @@ function GalleryCard({ item, to, onOpen }) {
 
   if (to) {
     return (
-      <Link to={to} className="gallery-card" aria-label={`${item.title} — view gallery`}>
+      <Link to={to} className="gallery-card reveal reveal--zoom" aria-label={`${item.title} — view gallery`}>
         {inner}
       </Link>
     );
   }
   return (
-    <button type="button" className="gallery-card" onClick={onOpen} aria-label={`Open image: ${item.title}`}>
+    <button type="button" className="gallery-card reveal reveal--zoom" onClick={onOpen} aria-label={`Open image: ${item.title}`}>
       {inner}
     </button>
   );

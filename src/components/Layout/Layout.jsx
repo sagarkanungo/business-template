@@ -3,6 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Header from "../Header/Header.jsx";
 import Footer from "../Footer/Footer.jsx";
 import WhatsAppButton from "../WhatsAppButton/WhatsAppButton.jsx";
+import useScrollReveal from "../../hooks/useScrollReveal.js";
 
 /** Scrolls to the top whenever the route changes. */
 function ScrollToTop() {
@@ -15,6 +16,7 @@ function ScrollToTop() {
 
 /** Shared page frame: header, page content, footer and floating WhatsApp button. */
 function Layout() {
+  useScrollReveal();
   return (
     <>
       <a className="skip-link" href="#main">
